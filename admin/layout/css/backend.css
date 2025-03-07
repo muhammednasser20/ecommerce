@@ -1,0 +1,406 @@
+
+*
+{
+    font-family: 'Arial', sans-serif;
+
+}
+a:hover
+{
+    text-decoration:none;
+}
+
+ 
+h1
+{
+    text-align: center;
+}
+
+/* تنسيق صفحة تسجيل الدخول */
+.page-login {
+    background-image: url('../../uploads/background.jpg'); /* صورة الخلفية */
+    background-size: cover;               /* تغطية كاملة */
+    background-repeat: no-repeat;         /* بدون تكرار */
+    display: flex;                        /* استخدام Flexbox */
+    justify-content: center;              /* توسيط أفقي */
+    align-items: center;                  /* توسيط عمودي */
+    height: 100vh;                        /* تغطية الصفحة بالكامل */
+    margin: 0;                            /* إزالة المسافات الخارجية */
+    font-family: 'Arial', sans-serif;     /* خط الصفحة */
+}
+
+/* تنسيق الفورم */
+.login {
+    background: rgba(255, 255, 255, 0.9); /* خلفية شفافة */
+    padding: 50px;                        /* مسافات داخلية */
+    border-radius: 15px;                  /* زوايا مستديرة */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* ظل جميل */
+    max-width: 400px;                     /* أقصى عرض للفورم */
+    width: 100%;                          /* عرض كامل داخل الـ Container */
+    text-align: center;                   /* توسيط النصوص */
+}
+
+/* أيقونة تسجيل الدخول */
+.login-icon {
+    font-size: 3rem;                      /* حجم الأيقونة */
+    color: #007bff;                       /* لون الأيقونة */
+    margin: 20px 0;                       /* مسافة حول الأيقونة */
+    animation: pulse 1.5s infinite;       /* حركة نبض */
+}
+
+/* حقول الإدخال */
+.login .form-control {
+    background-color: rgba(255, 255, 255, 0.8); /* لون شفاف */
+    border: 1px solid #ccc;                     /* حد رمادي */
+    padding: 10px;                              /* مسافات داخلية */
+    margin: 15px 0;                             /* مسافات خارجية */
+    border-radius: 5px;                         /* زوايا مستديرة */
+    font-size: 1rem;                            /* حجم النص */
+    width: 100%;                                /* عرض كامل */
+}
+
+/* زر تسجيل الدخول */
+.login .btn {
+    background-color: #007bff;                 /* لون الزر */
+    color: #fff;                               /* لون النص */
+    border: none;                              /* بدون حدود */
+    padding: 10px 20px;                        /* مسافات داخلية */
+    font-size: 1.1rem;                         /* حجم النص */
+    cursor: pointer;                           /* شكل المؤشر */
+    border-radius: 5px;                        /* زوايا مستديرة */
+    transition: background-color 0.3s ease;    /* حركة عند التمرير */
+}
+
+.login .btn:hover {
+    background-color: #0056b3;                 /* لون عند التمرير */
+}
+
+/* حركة النبض للأيقونة */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);                   /* الحجم الطبيعي */
+    }
+    50% {
+        transform: scale(1.1);                 /* تكبير طفيف */
+    }
+}
+
+
+/* Navbar */
+.navbar 
+{
+    margin-left: 15%;
+    background-color: #292F56;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #EEF4F6;
+    position: relative;
+    width: 85%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar-user {
+    position: relative;
+}
+
+.navbar-user .nav-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-user .nav-link img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar-user .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 1100;
+    min-width: 200px;
+}
+
+.navbar-user .dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(90deg,#001c4d, #448aff);
+    color: white;
+}
+
+/***** start Sidebar  style ********/
+.page-title
+{
+    text-align: center;
+    display: block;
+}
+svg
+{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 23px !important;
+    color:#00ddff;
+
+}
+
+
+.sidebar {
+    display: block;
+    background-color:#292F56;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Border Styling */
+.sidebar-item {
+    position: relative;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #3b3e43; /* خلفية العنصر */
+    color: white;
+    text-decoration: none;
+    display: block;
+    border-radius: 8px; /* زوايا دائرية */
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    margin: 10px 10px 10px 10px;
+}
+
+/* Gradient Border Effect on Hover */
+.sidebar-item:hover 
+{
+    background: linear-gradient(90deg,#001c4d, #448aff); /* التدرج اللوني */
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Active State (مثل القسم الذي أنت فيه الآن) */
+.sidebar-item i:active 
+{
+    background: linear-gradient(90deg, #448aff, #448aff); /* التدرج */
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-item i 
+{
+    margin-right: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+
+
+.sidebar-header {
+    margin-bottom: 30px;
+    background: linear-gradient(98deg, #090979, #00d4ff);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.nav.flex-column {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding: 10px 20px 20px 20px;
+    text-decoration: none;
+}
+
+.sidebar .nav-link i
+ {
+    margin-right: 10px;
+}
+
+
+
+/* Hide Sidebar for smaller screens */
+@media (max-width: 768px) {
+    .navbar
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        margin: 0px;
+    }
+    .navbar-user .nav-link 
+    {
+        font-size: 14px;
+    }
+    .btn
+    {
+        display: contents;
+    }
+    
+    .sidebar {
+        display: none;
+        width: 100%;
+        position: absolute;
+        height: 59vh;
+    }
+
+    .sidebar.hidden {
+        border: 2px solid #ffffff;
+        display: block;
+        margin-top: 78px;
+        padding-top: 26px;
+    }
+    .sidebar-header
+    {
+        display: none;
+    }
+}
+
+
+
+/* Members edits style */ 
+.formedit
+{
+    margin-top: 8%;
+}
+@media (max-width: 768px) {
+    .formedit {
+
+        margin-top: 35% !important;
+    }}
+
+
+  /* تصميم الرسائل */
+.message-container {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.alert {
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-info {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.required-label::after 
+{
+    content: " *";
+    color: red;
+}
+/* form eye show password */ 
+
+.btn-outline-secondary
+{
+    color: #007BFF;
+    border-color: #d1d1d1 !important;
+}
+
+.btn-outline-secondary:hover
+{
+    background-color: #a3a3a333 !important;
+}
+
+/********* style for red * in forms *****/
+.input-group button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.input-group button i {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+.input-group button:hover i {
+    color: #343a40;
+}
+.form-label::after {
+    content: " *";
+    color: red;
+}
+/* eye color */ 
+svg.svg-inline--fa.fa-eye.fa-w-18 {
+    color: #007BFF;
+}
+.Addmembers
+{
+    color: white;
+    background: linear-gradient(90deg,#001c4d, #448aff); /* التدرج اللوني */
+    border-radius: 13px;
+    padding: 8px;
+}
+
+.Addmembers:hover
+{
+    color: #ffffff;
+    background: #02BAEE;
+}
+svg.svg-inline--fa.fa-user-plus.fa-w-20.me-2
+ {
+    color: white;
+}
+
+
+    .container 
+    {
+        max-width: 70% !important;
+    }
+
+    tr {
+        border: 1px solid #ca1818 !important;
+    }
